@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Tome: finishing sign-in</title>
+<style>body{font:16px/1.5 system-ui,sans-serif;max-width:560px;margin:15vh auto;padding:0 20px;color:#222}</style>
+</head>
+<body>
+<p id="msg">Finishing sign-in...</p>
+<script>
+/* Google sends the sign-in answer here; this hands it straight back to the Tome install that asked
+   (its extension id is the first part of "state"). Nothing is stored or sent anywhere else. */
+(function () {
+  var q = location.search;
+  var state = new URLSearchParams(q).get("state") || "";
+  var id = state.split(".")[0];
+  if (!/^[a-p]{32}$/.test(id)) {
+    document.getElementById("msg").textContent = "This page finishes signing in to Tome. Start from Tome's Settings, Sync.";
+    return;
+  }
+  location.replace("https://" + id + ".chromiumapp.org/" + q);
+})();
+</script>
+</body>
+</html>
