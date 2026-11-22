@@ -13,17 +13,26 @@ a{color:#3b4cca}
 </head>
 <body>
 <h1>Tome privacy policy</h1>
-<p>Last updated November 15, 2026.</p>
-<p>Tome is a browser extension that replaces the new tab page. This policy explains what happens to your information.</p>
+<p>Last updated November 22, 2026.</p>
+<p>Tome is a browser extension that replaces the new tab page, with a companion Android app. This policy explains what happens to your information.</p>
 <h2>What Tome keeps</h2>
-<p>Your board, notes, links, reminders, settings and other content are stored in your own browser on your own computer. If you choose a save or backup folder, copies are written to that folder. Tome has no servers and its developer never receives your content.</p>
+<p>Your board, notes, links, reminders, settings and other content are stored in your own browser on your own computer, and in the app on your own phone. If you choose a save or backup folder, copies are written to that folder. Nothing leaves your device unless you turn on one of the optional features below.</p>
+<h2>Google sign-in</h2>
+<p>The optional features use Google sign-in. Tome receives your name, email address and profile picture from Google. Your email address is used to tell your devices apart from other people's, and on shared boards to show who you are and who can see the board.</p>
 <h2>Google Drive sync (optional)</h2>
-<p>If you connect Google Drive in Settings, Sync, Tome asks Google for permission to create and use its own files in your Drive (the "drive.file" permission). Tome cannot see any other file in your Drive. It writes the items you choose to sync, a list of your connected computers by the names you gave them, and daily copies of your Tome data, all in a folder named Tome in your Drive. These files go only between your browser and Google; the developer has no access to them.</p>
-<p>The sign-in token Google gives Tome is stored in your browser. Disconnecting in Settings, Sync deletes it and tells Google to cancel it. You can also remove Tome's access at any time from your Google Account's security settings, and delete the Tome folder from your Drive.</p>
+<p>If you connect Google Drive in Settings, Sync, Tome asks Google for permission to create and use its own files in your Drive (the "drive.file" permission) and a hidden folder that only Tome can see (the "drive.appdata" permission). Tome cannot see any other file in your Drive. It writes the items you choose to sync, a list of your connected devices by the names you gave them, and daily copies of your Tome data, in a folder named Tome in your Drive. The hidden folder holds your sync key (see below). These files go only between your devices and Google; the developer has no access to them.</p>
+<h2>Sync service (optional)</h2>
+<p>Sync between your computers and your phone can also go through Tome's sync service, a database run on Google Firebase. Everything you choose to sync is encrypted on your device before it is sent, with a key that is kept in your own Drive's hidden folder and never sent to the service. The service stores only the encrypted files, their sizes and when they changed, so neither the service nor the developer can read your content.</p>
+<h2>Shared boards (optional)</h2>
+<p>A shared board is stored in the sync service so everyone on it can see it. It holds the board's lists, task items, notes and activity, plus each member's email address, name and picture and when they were last on the board. Only people whose email addresses are on the board can open it. Shared board content is not encrypted end to end: it is protected by the service's access rules, not by a key only members hold. Leaving or deleting a board removes your access; the board's owner can delete the board for everyone.</p>
+<h2>GitHub link (optional)</h2>
+<p>A shared board can be linked to a file in a GitHub repository. Tome then reads and writes that file with GitHub's API. The GitHub key you enter is saved either on your computer only or on the shared board, as you choose; a key saved on the board can be used by everyone on it.</p>
+<h2>Removing access</h2>
+<p>Sign-in tokens are stored on your device. Disconnecting in Settings, Sync deletes them and tells Google to cancel them. You can also remove Tome's access at any time from your Google Account's security settings, delete the Tome folder from your Drive, and ask for your data in the sync service to be deleted through the contact below.</p>
 <p>The sign-in page at this site only passes Google's answer back to your browser. It stores nothing and sends nothing elsewhere.</p>
 <p>Tome's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 <h2>Other services</h2>
-<p>For the weather, Tome sends your chosen location to public weather services to get the forecast. Site icons for your links are loaded by the browser. Shared add-ons and update notices are read from the project's public download page.</p>
+<p>For the weather, Tome sends your chosen location to public weather services to get the forecast. Site icons for your links are loaded by the browser. Shared add-ons and update notices (for the extension and the phone app) are read from the project's public download page.</p>
 <h2>Sharing and selling</h2>
 <p>Tome does not sell, share or use your information for advertising, and it does not collect analytics.</p>
 <h2>Contact</h2>
